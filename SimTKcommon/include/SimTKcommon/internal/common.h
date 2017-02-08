@@ -651,8 +651,8 @@ bool operator>(const L& left, const R& right)
 
 template<class L, class R> inline
 bool operator<=(const L& left, const R& right)
-{   // test if left <= right, in terms of operator<
-    return !(right < left);
+{   // test if left <= right, in terms of operator>
+    return !(right > left);
 }
 
 template<class L, class R> inline
